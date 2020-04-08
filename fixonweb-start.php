@@ -7,7 +7,7 @@
  * Author URI:      https://github.com/edinaldohvieira
  * Text Domain:     fixonweb-start
  * Domain Path:     /languages
- * Version:         0.1.6
+ * Version:         0.1.7
  *
  * @package         Fixonweb_Start
  */
