@@ -7,7 +7,7 @@
  * Author URI:      https://github.com/edinaldohvieira
  * Text Domain:     fixonweb-start
  * Domain Path:     /languages
- * Version:         0.1.7
+ * Version:         0.1.8
  *
  * @package         Fixonweb_Start
  */
@@ -18,9 +18,7 @@ fix158629
 
 require 'plugin-update-checker.php';
 $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-	// 'https://suporte.appsaas.com.br/plugins/fixonweb-start/update/plugin.json',
-	'https://suporte.appsaas.com.br/update/?action=get_metadata&slug=fixonweb-start',
-	// 'https://github.com/edinaldohvieira/fixonweb-start',
+	'https://github.com/edinaldohvieira/fixonweb-start',
 	__FILE__, 
 	'fixonweb-start/fixonweb-start'
 );
