@@ -22,3 +22,14 @@ $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
 	__FILE__, 
 	'fixonweb-start/fixonweb-start'
 );
+
+add_action( 'parse_request', 'wmc_parse_request');
+function wmc_parse_request( &$wp ) {
+	if($wp->request == 'start'){
+		if(current_user_can('administrativo')){
+			wp_redirect( home_url().'/administrativo/' );
+		}
+		wp_redirect( home_url() );
+		exit;
+	}
+}
